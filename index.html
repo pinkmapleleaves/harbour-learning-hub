@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A fictional events page for the NeuroAccess usability evaluation demonstration.">
+  <title>Workshops | Harbour Learning Hub</title>
+  <style>
+    :root { color-scheme: light; --ink:#173042; --muted:#4c6270; --sea:#075e61; --pale:#eaf4f2; --line:#cfddd9; --gold:#f3c46b; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin:0; font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; color:var(--ink); background:#f7faf9; }
+    a { color:var(--sea); text-underline-offset:3px; }
+    a:focus-visible { outline:3px solid #b14b06; outline-offset:4px; border-radius:3px; }
+    .skip { position:absolute; left:1rem; top:-5rem; padding:.5rem .8rem; background:white; z-index:10; }
+    .skip:focus { top:.5rem; }
+    .wrap { width:min(1100px, calc(100% - 2rem)); margin-inline:auto; }
+    .notice { background:#183d48; color:#fff; font-size:.87rem; padding:.45rem 0; }
+    .notice strong { color:var(--gold); }
+    header { background:white; border-bottom:1px solid var(--line); }
+    .header-inner { display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:1.05rem 0; }
+    .brand { font-size:1.12rem; font-weight:750; letter-spacing:-.025em; color:var(--ink); text-decoration:none; }
+    nav { display:flex; gap:1.3rem; flex-wrap:wrap; font-size:.92rem; }
+    nav a { color:var(--ink); font-weight:650; text-decoration:none; }
+    nav a:hover { text-decoration:underline; }
+    .hero { background:linear-gradient(120deg, #dcefed 0%, #eff7ed 65%, #f8f0dd 100%); padding:4.2rem 0 4rem; }
+    .eyebrow { margin:0 0 .65rem; color:var(--sea); font-size:.82rem; font-weight:800; letter-spacing:.13em; text-transform:uppercase; }
+    h1,h2,h3 { line-height:1.15; letter-spacing:-.035em; }
+    h1 { font-size:clamp(2.4rem,6vw,4.4rem); max-width:780px; margin:.1rem 0 1rem; }
+    h2 { font-size:clamp(1.9rem,3.8vw,2.65rem); margin:0 0 .75rem; }
+    h3 { font-size:1.35rem; margin:.2rem 0 .5rem; }
+    .hero p:last-child { max-width:680px; font-size:1.08rem; color:var(--muted); margin-bottom:0; }
+    main section { padding:3.7rem 0; }
+    .intro { max-width:700px; color:var(--muted); margin:0 0 1.8rem; }
+    .cards { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; }
+    .card { display:flex; flex-direction:column; background:white; border:1px solid var(--line); border-radius:14px; padding:1.45rem; box-shadow:0 8px 24px rgba(23,48,66,.045); }
+    .tag { align-self:flex-start; border-radius:999px; padding:.22rem .65rem; background:var(--pale); color:var(--sea); font-size:.78rem; font-weight:750; }
+    .card p { color:var(--muted); margin:.35rem 0 1.1rem; }
+    .card dl { display:grid; grid-template-columns:auto 1fr; gap:.2rem .6rem; margin:auto 0 1.2rem; font-size:.88rem; }
+    .card dt { font-weight:750; }
+    .card dd { margin:0; }
+    .button { display:inline-block; align-self:flex-start; padding:.7rem 1rem; border-radius:8px; background:var(--sea); color:white; font-weight:700; text-decoration:none; }
+    .button:hover { background:#06494c; }
+    .detail { background:#eaf4f2; }
+    .detail-grid { display:grid; grid-template-columns:1.15fr .85fr; gap:3rem; align-items:start; }
+    .detail p { max-width:650px; }
+    .detail-box { background:white; border:1px solid var(--line); border-radius:14px; padding:1.4rem; }
+    .detail-box h3 { margin-top:0; }
+    .detail-box ol { margin:.4rem 0 0; padding-left:1.35rem; }
+    .detail-box li+li { margin-top:.5rem; }
+    footer { padding:2rem 0; background:#183d48; color:#fff; font-size:.9rem; }
+    footer p { margin:.2rem 0; }
+    footer a { color:#fff; }
+    @media (max-width:800px) { .cards,.detail-grid { grid-template-columns:1fr; } .header-inner { align-items:flex-start; flex-direction:column; } .hero { padding:3rem 0; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+  <div class="notice"><div class="wrap"><strong>Demonstration website.</strong> Harbour Learning Hub and its workshops are fictional; no bookings are taken here.</div></div>
+  <header>
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">Harbour Learning Hub</a>
+      <nav aria-label="Main navigation">
+        <a href="#workshops">Workshops</a>
+        <a href="#flexible-focus">Flexible Focus details</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <div class="hero" id="top"><div class="wrap">
+      <p class="eyebrow">Community learning · November 2026</p>
+      <h1>Find a workshop that fits your day.</h1>
+      <p>Explore a small collection of practical sessions. Each listing includes a time, location and a way to check registration details.</p>
+    </div></div>
+    <section id="workshops"><div class="wrap">
+      <p class="eyebrow">Browse</p>
+      <h2>Upcoming workshops</h2>
+      <p class="intro">Choose a session below to see its details. Times are shown in Sydney local time.</p>
+      <div class="cards">
+        <article class="card">
+          <span class="tag">Planning</span>
+          <h3>Flexible Focus</h3>
+          <p>A calm approach to planning short work sessions and breaks.</p>
+          <dl><dt>Date</dt><dd>12 November 2026</dd><dt>Time</dt><dd>10:30–11:15 am</dd><dt>Place</dt><dd>Online</dd></dl>
+          <a class="button" href="#flexible-focus">View session details</a>
+        </article>
+        <article class="card">
+          <span class="tag">Reading</span>
+          <h3>Reading at Your Pace</h3>
+          <p>Try simple ways to break a long reading task into manageable parts.</p>
+          <dl><dt>Date</dt><dd>18 November 2026</dd><dt>Time</dt><dd>2:00–2:45 pm</dd><dt>Place</dt><dd>Online</dd></dl>
+          <a class="button" href="#reading">View session details</a>
+        </article>
+        <article class="card">
+          <span class="tag">Communication</span>
+          <h3>Clearer Messages</h3>
+          <p>Organise key points before sending a request or update.</p>
+          <dl><dt>Date</dt><dd>24 November 2026</dd><dt>Time</dt><dd>11:00–11:45 am</dd><dt>Place</dt><dd>Online</dd></dl>
+          <a class="button" href="#messages">View session details</a>
+        </article>
+      </div>
+    </div></section>
+    <section class="detail" id="flexible-focus"><div class="wrap detail-grid">
+      <div>
+        <p class="eyebrow">Session details</p>
+        <h2>Flexible Focus</h2>
+        <p>This fictional session introduces a short planning routine, an optional break and a way to review what worked. You can read the details without signing in.</p>
+        <p><strong>When:</strong> Thursday 12 November 2026, 10:30–11:15 am (Sydney time).<br><strong>Where:</strong> Online.</p>
+        <p id="registration"><strong>Registration:</strong> This is a usability demonstration. There is no real registration form or booking.</p>
+      </div>
+      <div class="detail-box">
+        <h3>How to check this session</h3>
+        <ol><li>Find Flexible Focus in the workshop list.</li><li>Open its session details.</li><li>Check the date, time and registration note.</li></ol>
+      </div>
+    </div></section>
+    <section id="reading"><div class="wrap"><h2>Reading at Your Pace</h2><p>Wednesday 18 November 2026, 2:00–2:45 pm (Sydney time). This is a fictional demonstration session; registration is unavailable.</p></div></section>
+    <section id="messages" style="background:#eaf4f2"><div class="wrap"><h2>Clearer Messages</h2><p>Tuesday 24 November 2026, 11:00–11:45 am (Sydney time). This is a fictional demonstration session; registration is unavailable.</p></div></section>
+  </main>
+  <footer id="contact"><div class="wrap"><p><strong>Harbour Learning Hub</strong> · Fictional website for the NeuroAccess evaluation demonstration.</p><p>This page has no form and asks for no personal information. Task evaluation and consent are handled separately in NeuroAccess.</p></div></footer>
+</body>
+</html>
